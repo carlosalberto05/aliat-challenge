@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Pacifico-Regular;
+  src: url("/assets/fonts/pacifico_regular.woff2");
+}
+@font-face {
+  font-family: Patua-Regular;
+  src: url("/assets/fonts/patua_regular.woff2");
+}
+@font-face {
+  font-family: Poppins-medium;
+  src: url("/assets/fonts/poppins_medium.woff2");
+}
+@font-face {
+  font-family: Poppins-regular;
+  src: url("/assets/fonts/poppins_regular.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(242, 234, 233);
+  color: rgb(42, 57, 143);
+}
+
+/* clases del nav -----------------------------------------------------*/
+.menu {
+  /* background-color: red; */
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* clases de label ---------------------------*/
+.logo {
+  margin: 0 3%;
+}
+.logo img {
+  width: 3rem;
+}
+
+/* clases de ul */
+.menu_items {
+  width: 40%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0 3%;
+}
+.menu_items li {
+  margin: 0 2%;
+}
+.menu_items li a {
+  text-decoration: none;
+  font-family: Poppins-medium;
+  font-size: small;
+  display: block;
+  color: rgb(42, 57, 143);
+}
+.menu_items li a:hover {
+  color: rgba(7, 41, 233, 0.7);
+  transition: 0.2s;
+}
+.btn_menu {
+  padding-right: 3%;
+  font-size: larger;
+  cursor: pointer;
+  display: none;
+}
+
+ul.mostrar {
+  top: 65px;
+  /* background-color: red; */
+  transition: 0.4s;
+}
+/* --------------------------------------------- */
+
+/* clases del titulo */
+h1.bajar_titulo {
+  /* background-color: aqua; */
+  transition: 0.4s;
+  padding-top: 75%;
+}
+.titulo {
+  text-align: center;
+  font-family: Patua-Regular;
+}
+.subtitulo {
+  text-align: center;
+  font-family: Pacifico-Regular;
+  font-size: x-large;
+  color: rgb(110, 113, 141);
+}
+
+/* --------------------------------------------- */
+/* la seccion de imagenes */
+.main {
+  margin-top: 2%;
+}
+.card {
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card-containerImg {
+  background-color: aqua;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-containerImg-img {
+  width: 93%;
+  height: 90%;
+  object-fit: cover;
+}
+.text {
+  background-color: rgb(42, 165, 42);
+  height: 10%;
+}
+
+/* medias --------------------------------------------*/
+@media screen and (max-width: 948px) {
+  .menu_items {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 759px) {
+  .menu {
+    height: 65px;
+  }
+  .logo img {
+    width: 2rem;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+  .menu_items {
+    position: absolute;
+    width: 100vw;
+    height: calc(50% - 65px);
+    top: -100vh;
+    text-align: center;
+    flex-direction: column;
+  }
+  .menu_items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .menu_items li a {
+    font-size: x-small;
+  }
+  h1 {
+    font-size: medium;
+  }
+  .subtitulo {
+    font-size: medium;
+  }
+}
+
+/* cards */
+@media screen and (max-width: 1200px) {
+  .main-order {
+    display: flex;
+  }
+  .uno {
+    order: 1;
+  }
+  .dos {
+    order: 3;
+  }
+  .tres {
+    order: 2;
+  }
+}
