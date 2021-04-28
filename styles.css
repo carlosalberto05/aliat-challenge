@@ -281,6 +281,49 @@ h1.bajar_titulo {
     font-size: medium;
     margin-left: 5%;
   }
+  .boxImagenes {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .secDos-content {
+    border: 2px solid rgb(81, 90, 161);
+    width: 100%;
+    height: 35%;
+    margin-top: 1.5%;
+    margin-left: 7%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .colPrinUno {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1.5%;
+  }
+  .colPrinUno img {
+    width: 48%;
+    height: auto;
+  }
+
+  .secDos-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .secDos-content h4 {
+    font-size: 20px;
+  }
+
+  .secDos-content p {
+    text-align: center;
+    color: rgb(110, 113, 141);
+  }
 }
 
 /* cards */
@@ -297,5 +340,53 @@ h1.bajar_titulo {
   }
   .tres {
     order: 2;
+  }
+
+  .colPrinDos_imagenes {
+    width: 50%;
+    height: auto;
+  }
+  .colPrinDos_frase {
+    width: 50%;
+    height: auto;
+  }
+  .secDos-content {
+    margin-top: 3%;
+  }
+
+  .fraseLogo {
+    height: 98%;
+  }
+
+  .fraseLogo h3 {
+    padding-top: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: Patua-Regular;
+    font-weight: lighter;
+    font-size: 100%;
+  }
+
+  .fraseLogo h3 span {
+    font-family: Pacifico-Regular;
+  }
+
+  .fraseLogo img {
+    margin-top: 30%;
+    width: 100%;
+  }
+
+  .secDos-content h4 {
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 25px;
+  }
+
+  .secDos-content p {
+    text-align: center;
+    color: rgb(110, 113, 141);
   }
 }
