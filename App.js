@@ -4,8 +4,13 @@ addEventListener("DOMContentLoaded", () => {
     btn_menu.addEventListener("click", () => {
       const menu_items = document.querySelector(".menu_items");
       menu_items.classList.toggle("mostrar");
-      const titulo = document.querySelector(".titulo");
-      titulo.classList.toggle("bajar_titulo");
+      btn_menu.classList.toggle("ocultar");
+      const logo = document.querySelector(".logo");
+      logo.classList.toggle("ocultar_logo");
+      const cerrar = document.querySelector(".btn_cerrar");
+      cerrar.classList.toggle("mostrarCerrar");
+      // const menu = document.querySelector(".btn");
+      // menu.classList.toggle("cerrar");
     });
   }
 });
