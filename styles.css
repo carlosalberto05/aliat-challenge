@@ -46,7 +46,6 @@ body {
 /* clases de ul */
 .menu_items {
   width: 40%;
-  /* background-color: aqua; */
   display: flex;
   justify-content: flex-end;
   list-style: none;
@@ -81,11 +80,11 @@ ul.mostrar {
 /* --------------------------------------------- */
 
 /* clases del titulo */
-h1.bajar_titulo {
+/* h1.bajar_titulo {
   /* background-color: aqua; */
-  transition: 0.4s;
-  padding-top: 75%;
-}
+/* transition: 0.4s;
+  padding-top: 75%; */
+/* } */
 .titulo {
   text-align: center;
   font-family: Patua-Regular;
@@ -330,9 +329,11 @@ h1.bajar_titulo {
     display: inline-flex;
   }
   .menu_items {
+    background-color: rgb(42, 56, 143);
     position: absolute;
-    width: 100vw;
-    height: calc(50% - 65px);
+    width: 100%;
+    height: 100%;
+    /* height: calc(50% - 65px); */
     top: -100vh;
     text-align: center;
     flex-direction: column;
@@ -343,6 +344,7 @@ h1.bajar_titulo {
   }
   .menu_items li a {
     font-size: x-small;
+    color: white;
   }
   h1 {
     font-size: medium;
