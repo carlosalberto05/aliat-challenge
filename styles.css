@@ -18,92 +18,73 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 0;
-  box-sizing: border-box;
+  outline: none;
 }
-body {
-  background-color: rgb(242, 234, 233);
-  color: rgb(42, 57, 143);
+body,
+html {
+  /* background-color: rgb(242, 234, 233);
+  color: rgb(42, 57, 143); */
+  background: #f2ebea;
+  font-family: poppins regular, serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
 }
 
-/* clases del nav -----------------------------------------------------*/
-.menu {
-  /* background-color: red; */
-  height: 75px;
-  width: 100vw;
+/* clases del header y nav -----------------------------------------------------*/
+header {
+  width: calc(100% - 100px);
+  padding: 10px 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-/* clases de label ---------------------------*/
+
 .logo {
-  margin: 0 3%;
-}
-.logo img {
-  width: 3rem;
-}
-
-a.ocultar_logo {
-  display: none;
-}
-
-/* clases de ul */
-.menu_items {
-  width: 40%;
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0 3%;
-}
-.menu_items li {
-  margin: 0 2%;
-}
-.menu_items li a {
-  text-decoration: none;
-  font-family: Poppins-medium;
-  font-size: small;
+  width: 65px;
+  height: 65px;
   display: block;
-  color: rgb(42, 57, 143);
-}
-.menu_items li a:hover {
-  color: rgba(7, 41, 233, 0.7);
-  transition: 0.2s;
-}
-.btn_menu {
-  padding-right: 3%;
-  font-size: larger;
-  cursor: pointer;
-  display: none;
-  background: none;
-  border: 0;
 }
 
-button.ocultar {
+.btn_menu {
+  border: none;
+  background: transparent;
+  padding: 0;
   display: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn_menu i {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.menu {
+  display: flex;
 }
 
 .btn_cerrar {
-  padding-right: 3%;
-  font-size: larger;
-  cursor: pointer;
+  margin: 0 0 0 auto;
+  border: none;
+  background: transparent;
+  padding: 0;
   display: none;
-  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
 }
 
-span.mostrarCerrar {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(42, 56, 143);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-ul.mostrar {
-  top: 65px;
-  margin-top: 0px;
-  /* background-color: red; */
-  transition: 0.4s;
+.menu a {
+  margin: 0 0 0 15px;
+  color: #2b388f;
+  font-family: Poppins-medium;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* --------------------------------------------- */
@@ -336,226 +317,56 @@ ul.mostrar {
 }
 
 /* medias --------------------------------------------*/
-@media screen and (max-width: 948px) {
-  .menu_items {
-    width: 50%;
+
+@media screen and (max-width: 1024px) {
+  header {
+    width: calc(100% - 50px);
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
-@media screen and (max-width: 759px) {
-  .lolita {
-    overflow: hidden;
+
+@media screen and (max-width: 525px) {
+  .btn_menu {
+    display: block;
   }
+
   .menu {
-    height: 65px;
+    position: fixed;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    padding: 25px;
+    top: 0;
+    left: 0;
+    background: #2b388f;
+    transform: translateY(-100%);
+    transition: all 0.3s ease;
+    display: block;
   }
-  .logo img {
-    width: 2rem;
+
+  nav.active {
+    transform: none;
+    position: fixed;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    padding: 25px;
+    top: 0;
+    left: 0;
+    background: #2b388f;
+    transition: all 0.3s ease;
   }
 
   .btn_cerrar {
-    display: none;
+    display: block;
+    color: #fff;
   }
 
-  .btn_menu {
-    display: inline-flex;
-  }
-  .menu_items {
-    background-color: rgb(42, 56, 143);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -100vh;
-    text-align: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-  .menu_items li {
-    margin: 30px 0 0 0;
-    line-height: 30px;
-  }
-  .menu_items li a {
-    font-size: medium;
-    color: white;
-  }
-
-  .menu_items li a:hover {
-    color: aqua;
-  }
-
-  h1 {
-    font-size: medium;
-  }
-  .subtitulo {
-    font-size: medium;
-  }
-  .subtituloDos {
-    font-size: medium;
-    margin-left: 5%;
-  }
-  .boxImagenes {
-    width: 95%;
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-
-  .fraseLogo {
-    width: 95%;
-  }
-
-  .fraseLogo div img {
-    margin-top: 50%;
-  }
-
-  .secDos-content {
-    border: 2px solid rgb(81, 90, 161);
-    width: 100%;
-    height: 35%;
-    margin-top: 1.5%;
-    margin-left: 7%;
-    margin-right: 3%;
-    margin-bottom: 5%;
-    padding-bottom: 10%;
-  }
-
-  .logo-footer {
-    margin-top: 3%;
-    width: 10%;
-  }
-
-  .menu_items-footer {
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: x-small;
-  }
-
-  .politica {
-    margin-bottom: 3%;
-  }
-
-  .aliat {
-    padding-bottom: 3%;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .colPrinUno {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 1.5%;
-  }
-  .colPrinUno img {
-    width: 48%;
-    height: auto;
-  }
-
-  .colPrinDos_secDos {
-    width: 100%;
-    margin-top: 1%;
-  }
-
-  .secDos-content {
-    margin-top: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .secDos-content h4 {
-    font-size: 20px;
-  }
-
-  .secDos-content p {
-    text-align: center;
-    color: rgb(110, 113, 141);
-    margin-bottom: 40%;
-  }
-
-  .footer-container {
-    margin-top: 3%;
-  }
-}
-
-/* cards */
-@media screen and (max-width: 1200px) {
-  .main-order {
-    display: flex;
-  }
-  .uno {
-    order: 1;
-  }
-  .dos {
-    order: 3;
-    margin-top: 2%;
-  }
-  .tres {
-    order: 2;
-  }
-
-  .colPrinDos_imagenes {
-    width: 50%;
-    height: auto;
-  }
-  .colPrinDos_frase {
-    width: 50%;
-    height: auto;
-  }
-
-  .colPrinDos_secDos {
-    width: 100%;
-  }
-
-  .secDos-content {
-    margin-top: 3%;
-  }
-
-  .fraseLogo {
-    height: 98%;
-  }
-
-  .fraseLogo h3 {
-    padding-top: 25%;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: Patua-Regular;
-    font-weight: lighter;
-    font-size: 100%;
-  }
-
-  .fraseLogo h3 span {
-    font-family: Pacifico-Regular;
-  }
-
-  .fraseLogo img {
-    margin-top: 30%;
-    width: 100%;
-  }
-
-  .secDos-content h4 {
-    text-align: center;
-    margin-top: 20%;
-    margin-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 25px;
-  }
-
-  .secDos-content p {
-    text-align: center;
-    color: rgb(110, 113, 141);
-  }
-
-  .info {
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .info {
-    position: absolute;
-    margin-left: 15%;
-    margin-top: 21%;
+  .menu a {
+    display: block;
+    width: fit-content;
+    color: #fff;
+    margin: 15px auto 0 auto;
   }
 }
