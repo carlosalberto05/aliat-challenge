@@ -212,6 +212,98 @@ header {
   padding: 1px;
 }
 
+.fotoLogo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fotos {
+  width: calc(50% - 15px);
+}
+
+.foto1 {
+  background: url("/assets/images/00_impulse1.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  padding: 1px;
+}
+
+.foto2 {
+  background: url("/assets//images/00_impulse2.jpg") 50% no-repeat;
+  background-size: cover;
+  margin: 30px 0 0 0;
+  width: 100%;
+  height: 250px;
+  padding: 1px;
+}
+
+.foto2 a {
+  margin: 15px 15px 0 auto;
+  width: fit-content;
+  background: #2b388f;
+  color: #fff;
+  line-height: 40px;
+  padding: 0px 15px;
+  font-family: poppins medium, serif;
+  font-size: 14px;
+  border-radius: 15px;
+  display: block;
+}
+
+.gran_logo {
+  width: calc(50% - 50px);
+  background: #6e728e;
+  padding: 15px;
+}
+
+.gran_logo p {
+  margin: 50px 0 0 0;
+  font-family: Patua-Regular, serif;
+  font-size: 25px;
+  text-align: left;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.gran_logo p span {
+  font-family: Pacifico-Regular, serif;
+  font-size: 30px;
+}
+
+.gran_logo img {
+  margin: 50px auto 0 auto;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+}
+
+.objetivo {
+  margin: 30px 0 0 0;
+  width: calc(100% - 54px);
+  padding: 25px;
+  border: 2px solid #7177af;
+  min-height: 217px;
+}
+
+.objetivo h4 {
+  margin: 25px 0 0 0;
+  font-size: 25px;
+  color: #6e728e;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: Patua-Regular, serif;
+}
+
+.objetivo p {
+  margin: 25px 0 0 0;
+  font-family: Poppins-Regular, serif;
+  color: #6e728e;
+  font-size: 20px;
+  text-align: center;
+}
+
 /* footer------------------------------------------------*/
 .footer-container {
   background-color: rgb(42, 56, 143);
@@ -221,7 +313,8 @@ header {
 
 .logo-footer {
   margin-top: 1%;
-  width: 4%;
+  width: 65px;
+  height: 65px;
   margin-bottom: 1%;
 }
 
@@ -302,6 +395,79 @@ header {
     margin: 25px auto 0 auto;
     width: calc(100% - 50px);
     max-width: 425px;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+
+  .galeria {
+    display: block;
+  }
+
+  .columna1 {
+    justify-content: space-between;
+  }
+
+  .columna2 {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .fotoLogo {
+    width: 100%;
+    margin: 30px 0 0 0;
+    display: block;
+  }
+
+  .fotos {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  .gran_logo {
+    margin: 30px 0 0 0;
+    width: calc(100% - 50px);
+    padding: 25px;
+  }
+
+  .gran_logo p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .columna1 {
+    display: block;
+    width: 100%;
+  }
+
+  .tamales {
+    width: 100%;
+    margin: 25px 0 0 0;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .bisuteria {
+    width: 100%;
+    margin: 25px 0 0 0;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .foto1 {
+    width: 100%;
+    margin: 25px 0 0 0;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+
+  .foto2 {
+    width: 100%;
+    margin: 25px 0 0 0;
+    height: 0;
+    padding-bottom: 56.25%;
   }
 }
 
