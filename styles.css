@@ -25,7 +25,7 @@ html {
   /* background-color: rgb(242, 234, 233);
   color: rgb(42, 57, 143); */
   background: #f2ebea;
-  font-family: poppins regular, serif;
+  font-family: Poppins-regular, serif;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -87,173 +87,129 @@ header {
   text-decoration: none;
 }
 
-/* --------------------------------------------- */
+/* sección de las imagenes ------------------------*/
+
+.main {
+  width: calc(100% - 100px);
+  min-height: calc(100vh - 100px);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* titulo ----------------------------*/
 
 .titulo {
+  font-family: Patua-Regular;
+  letter-spacing: 4px;
   text-align: center;
-  font-family: Patua-Regular;
+  font-size: 45px;
+  color: #2b388f;
+  margin: 0;
 }
-.subtitulo {
-  text-align: center;
+
+.titulo span {
   font-family: Pacifico-Regular;
-  font-size: x-large;
-  color: rgb(110, 113, 141);
-}
-
-/* --------------------------------------------- */
-/* la seccion de imagenes */
-.main {
-  margin-top: 2%;
-}
-.card {
-  background-color: white;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.card-containerImg {
-  width: 100%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.card-containerImg-img {
-  width: 94%;
-  height: 94%;
-  object-fit: cover;
-}
-
-/* seccion media */
-.text {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Pacifico-Regular;
-  font-size: small;
-  color: rgb(110, 113, 141);
-}
-.subtituloDos {
-  margin-top: 2%;
-  font-family: Patua-Regular;
-  font-size: x-large;
-  color: rgb(42, 57, 143);
-}
-.subtituloDos span {
-  font-family: Pacifico-Regular;
-  font-weight: lighter;
-  color: rgb(81, 90, 161);
-}
-/* seccion media imagenes */
-.boxImagenes {
-  /* height: 600px; */
-  margin-top: 3%;
-}
-.colPrinUno {
-  display: flex;
-  flex-direction: column;
-}
-
-.colPrinUno img {
-  object-fit: cover;
-  margin-bottom: 5%;
-}
-
-.colPrinDos {
-}
-
-.colPrinDos_secUno {
-  height: 60%;
-}
-.colPrinDos_secDos {
-  height: 40%;
-  display: flex;
-}
-
-.secDos-content {
-  border: 2px solid rgb(81, 90, 161);
-  width: 100%;
-  height: 90%;
-  margin-top: 1.5%;
-  margin-left: 3.5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-}
-
-.colPrinDos_imagenes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 97%;
-}
-
-.info {
-  background-color: rgb(42, 56, 143);
-  color: white;
-  position: absolute;
-  margin-left: 14%;
-  margin-top: 19%;
-  padding: 0.6%;
-  border-radius: 10px;
-  font-family: Poppins-regular;
-  font-size: small;
-  text-align: center;
-}
-
-.colPrinDos_imagenes img {
-  width: 90%;
-  height: 60%;
-  object-fit: cover;
-  margin-bottom: 5%;
-}
-
-.fraseLogo {
-  background-color: rgb(110, 113, 142);
-  width: 100%;
-  height: 99%;
-  color: white;
-  text-align: justify;
-  padding-left: 5%;
-  padding-right: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.fraseLogo h3 {
-  padding-top: 15%;
-  font-family: Patua-Regular;
-  font-weight: lighter;
-  font-size: 150%;
-}
-
-.fraseLogo h3 span {
-  font-family: Pacifico-Regular;
-}
-
-.fraseLogo img {
-  margin-top: 10%;
-  width: 120%;
-}
-
-.secDos-content h4 {
-  font-family: Patua-Regular;
-  color: rgb(115, 117, 146);
-  margin-top: 8%;
-  margin-bottom: 3%;
+  display: block;
+  font-weight: 100;
   font-size: 25px;
+  color: #6e728e;
 }
 
-.secDos-content p {
-  font-family: Poppins-regular;
+/* tarjetas ------------------------------*/
+.tarjetas {
+  width: 100%;
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarjeta {
+  width: calc(25% - 45px);
+  padding: 15px;
+  background: #fff;
+}
+
+.imagen_tarjeta {
+  width: 100%;
+  height: 475px;
+}
+
+.tarjeta p {
+  font-family: Pacifico-Regular;
+  font-size: 20px;
+  color: #6e728e;
+  margin: 15px 0 0 0;
   text-align: center;
-  color: rgb(110, 113, 141);
+}
+
+.tarjeta1 .imagen_tarjeta {
+  background: url("/assets/images/00_social_asssistance1.jpg") 50% no-repeat;
+  background-size: cover;
+}
+
+.tarjeta2 {
+  width: calc(50% - 45px);
+}
+
+.tarjeta2 .imagen_tarjeta {
+  background: url("/assets/images/00_social_asssistance2.jpg") 50% no-repeat;
+  background-size: cover;
+}
+
+.tarjeta3 .imagen_tarjeta {
+  background: url("/assets/images/00_social_asssistance3.jpg") 50% no-repeat;
+  background-size: cover;
+}
+
+/* subtitulo ---------------------------------------------*/
+.subtitulo {
+  margin: 50px 0 0 0;
+  text-align: left;
+  font-family: Patua-Regular, serif;
+  letter-spacing: 4px;
+  font-size: 45px;
+  color: #2b388f;
+}
+
+.subtitulo span {
+  font-family: Pacifico-Regular, serif;
+  color: #525ba1;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+/* seccion de galeria ------------------------------------*/
+.galeria {
+  margin: 50px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna1 {
+  width: calc(33.33% - 15px);
+}
+
+.columna2 {
+  width: calc(66.66% - 15px);
+}
+
+.tamales {
+  width: 100%;
+  height: 600px;
+  background: url("./assets/images/00_impulse4.jpg") 50% no-repeat;
+  background-size: cover;
+  padding: 1px;
+}
+
+.bisuteria {
+  margin: 30px 0 0 0;
+  width: 100%;
+  height: 250px;
+  background: url("/assets/images/00_impulse3.jpg") 50% no-repeat;
+  background-size: cover;
+  padding: 1px;
 }
 
 /* footer------------------------------------------------*/
@@ -318,6 +274,12 @@ header {
 
 /* medias --------------------------------------------*/
 
+@media screen and (max-width: 1280px) {
+  .imagen_tarjeta {
+    height: 275px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   header {
     width: calc(100% - 50px);
@@ -325,6 +287,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .main {
+    width: calc(100% - 50px);
+    padding: 25px;
+  }
+
+  .tarjetas {
+    display: block;
+  }
+
+  .tarjetas .tarjeta {
+    margin: 25px auto 0 auto;
+    width: calc(100% - 50px);
+    max-width: 425px;
   }
 }
 
