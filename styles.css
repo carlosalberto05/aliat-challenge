@@ -406,7 +406,21 @@ header {
   }
 
   .columna1 {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
+  }
+
+  .tamales {
+    width: calc(50% - 15px);
+    margin: 0;
+    height: 275px;
+  }
+
+  .bisuteria {
+    width: calc(50% - 15px);
+    margin: 0;
+    height: 275px;
   }
 
   .columna2 {
@@ -423,6 +437,20 @@ header {
   .fotos {
     width: 100%;
     margin: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foto1 {
+    width: calc(50% - 15px);
+    margin: 0;
+    height: 275px;
+  }
+
+  .foto2 {
+    width: calc(50% - 15px);
+    margin: 0;
+    height: 275px;
   }
 
   .gran_logo {
@@ -454,6 +482,10 @@ header {
     margin: 25px 0 0 0;
     height: 0;
     padding-bottom: 56.25%;
+  }
+
+  .fotos {
+    display: block;
   }
 
   .foto1 {
@@ -511,5 +543,9 @@ header {
     width: fit-content;
     color: #fff;
     margin: 15px auto 0 auto;
+  }
+
+  .menu_items-footer {
+    flex-direction: column;
   }
 }
